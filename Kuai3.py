@@ -3,11 +3,12 @@
 
 import math
 
-
 def calMoney():
     rate = 0.93
+    earn = float(input('-> 请输入每笔想赚取的金额:'))
+    firstin = math.ceil(earn / 0.93)
+    print('<- 至少需要投入 %d 才能达到目标.' % firstin)
     firstin = int(input('请输入初始投入金额:'))
-    earn = float(input('请输入每比想赚取的金额:'))
     sumin = firstin
     needin = 0
     count = 1
